@@ -13,6 +13,12 @@ app.use('/api',require('./routes/loginuser.js'))
 app.get('/',(req,res)=>{
     res.send('hii')
 })
+app.get('/api/signup',(req,res)=>{
+    res.send('signup')
+})
+app.get('/api/login',(req,res)=>{
+    res.send('login')
+})
 
 app.listen(port,()=>{
     console.log(`server is listening to ${port}`)
